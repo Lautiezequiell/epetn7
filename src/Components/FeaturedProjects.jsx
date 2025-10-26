@@ -6,7 +6,7 @@ const projects = [
   {
     title: "EcoDepto",
     description: "Este proyecto es un sistema de riego inteligente para jardines verticales en terrazas y balcones de edificios utilizando el agua de condensación de los aires acondicionados. Diseñado para entornos dónde el espacio es limitado, para optimizar el uso del agua y promover la jardinería urbana.",
-    image: "../../public/EcoDeptoLogo.jpeg",
+    image: "/EcoDeptoLogo.jpeg",
     category: "Informática",
     year: "2025",
     url: "https://ecodepto3d.netlify.app/",
@@ -14,7 +14,7 @@ const projects = [
   {
     title: "Sistema Gestor de Biblioteca",
     description: "Este proyecto es una plataforma web diseñada para gestionar de manera eficiente los recursos y actividades de una biblioteca municipal, facilitando el préstamo y devolución de libros, así como la administración de usuarios y catálogos.",
-    image: "../../public/Biblioteca-1.png",
+    image: "/Biblioteca-1.png",
     category: "Informática",
     year: "2025",
     url: "https://bibliotmunicipaljardin.netlify.app",
@@ -22,7 +22,7 @@ const projects = [
   {
     title: "SmartHouse",
     description: "Proyecto de automatización del hogar que integra dispositivos inteligentes para mejorar la comodidad, seguridad y eficiencia energética en viviendas. Permite controlar y monitorear diversos aspectos del hogar a través de una interfaz centralizada.",
-    image: "../../public/SmartHouse.jpeg",
+    image: "/SmartHouse.jpeg",
     category: "Electromecánica",
     year: "2025",
     url: "https://vddc34h2-smart-house.vercel.app/",

@@ -86,14 +86,14 @@ export default function ExpoSection() {
               <div className="space-y-4">
                 <div className="relative rounded-2xl overflow-hidden shadow-xl h-48">
                   <img
-                    src="../../public/Robotic.jpeg"
+                    src="/Robotic.jpeg"
                     alt="ExpoEPET - Proyectos"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="relative rounded-2xl overflow-hidden shadow-xl h-64">
                   <img
-                    src="../../public/Policia.jpeg"
+                    src="/Policia.jpeg"
                     alt="ExpoEPET - Exhibición"
                     className="w-full h-full object-cover"
                   />
@@ -102,14 +102,14 @@ export default function ExpoSection() {
               <div className="space-y-4 pt-8">
                 <div className="relative rounded-2xl overflow-hidden shadow-xl h-64">
                   <img
-                    src="../../public/Egresados.jpeg"
+                    src="/Egresados.jpeg"
                     alt="ExpoEPET - Estudiantes"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="relative rounded-2xl overflow-hidden shadow-xl h-48">
                   <img
-                    src="../../public/Robotic.jpeg"
+                    src="/Robotic.jpeg"
                     alt="ExpoEPET - Innovación"
                     className="w-full h-full object-cover"
                   />
