@@ -71,19 +71,19 @@ export default function CTASection() {
               <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400 mb-2">
                 Reconocimiento Oficial
               </div>
-              <p className="text-blue-200 text-sm">Títulos habilitantes nacionales</p>
+              <p className="text-blue-200 text-sm">Títulos reconocidos nacionalmente</p>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400 mb-2">
                 Inserción Laboral
               </div>
-              <p className="text-blue-200 text-sm">Convenios con empresas del sector</p>
+              <p className="text-blue-200 text-sm">Nexo con empresas del sector</p>
             </div>
             <div className="text-center">
               <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400 mb-2">
                 Becas Disponibles
               </div>
-              <p className="text-blue-200 text-sm">Apoyo económico para estudiantes</p>
+              <p className="text-blue-200 text-sm">Convenios de Intercambio para estudiantes</p>
             </div>
           </motion.div>
         </div>

@@ -136,7 +136,7 @@ export default function Layout({ children }) {
               </p>
               <div className="flex gap-3 mt-6">
                 <a
-                  href="https://facebook.com"
+                  href="https://www.facebook.com/E.P.E.T.7"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 bg-white/10 hover:bg-blue-600 rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110"
@@ -145,7 +145,7 @@ export default function Layout({ children }) {
                   <Facebook className="w-5 h-5" />
                 </a>
                 <a
-                  href="https://instagram.com"
+                  href="https://www.instagram.com/epet7oficial/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 bg-white/10 hover:bg-pink-600 rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110"
@@ -154,7 +154,7 @@ export default function Layout({ children }) {
                   <Instagram className="w-5 h-5" />
                 </a>
                 <a
-                  href="https://twitter.com"
+                  href="https://x.com/epetn7"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-10 h-10 bg-white/10 hover:bg-blue-400 rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110"
@@ -224,15 +224,15 @@ export default function Layout({ children }) {
               <div className="space-y-3 text-sm">
                 <div>
                   <p className="text-blue-400 font-medium">Turno Mañana</p>
-                  <p className="text-gray-300">7:30 - 12:30 hs</p>
+                  <p className="text-gray-300">07:00 - 11:50 hs</p>
                 </div>
                 <div>
                   <p className="text-blue-400 font-medium">Turno Tarde</p>
-                  <p className="text-gray-300">13:00 - 18:00 hs</p>
+                  <p className="text-gray-300">13:30 - 18:20 hs</p>
                 </div>
                 <div>
                   <p className="text-blue-400 font-medium">Secretaría</p>
-                  <p className="text-gray-300">Lunes a Viernes<br />8:00 - 17:00 hs</p>
+                  <p className="text-gray-300">Lunes a Viernes<br />08:00 - 17:00 hs</p>
                 </div>
               </div>
             </div>
