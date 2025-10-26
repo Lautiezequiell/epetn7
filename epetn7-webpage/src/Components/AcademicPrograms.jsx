@@ -1,10 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Cpu, Wrench, Zap, Code, Settings, BookOpen } from "lucide-react";
+import { BookOpen } from "lucide-react";
 
 const programs = [
   {
-    icon: Cpu,
     title: "Electrónica",
     description: "Formación integral en sistemas electrónicos, microcontroladores y automatización industrial.",
     color: "from-blue-500 to-blue-600",
@@ -12,7 +11,6 @@ const programs = [
     iconBg: "bg-blue-100",
   },
   {
-    icon: Code,
     title: "Informática",
     description: "Desarrollo de software, redes, bases de datos y tecnologías emergentes para el mundo digital.",
     color: "from-purple-500 to-purple-600",
@@ -20,7 +18,6 @@ const programs = [
     iconBg: "bg-purple-100",
   },
   {
-    icon: Zap,
     title: "Electromecánica",
     description: "Especialización en sistemas eléctricos, mecánicos y control de procesos industriales.",
     color: "from-orange-500 to-orange-600",
@@ -28,7 +25,6 @@ const programs = [
     iconBg: "bg-orange-100",
   },
   {
-    icon: Settings,
     title: "Mecánica",
     description: "Diseño, fabricación y mantenimiento de sistemas mecánicos con tecnología de punta.",
     color: "from-green-500 to-green-600",
@@ -79,7 +75,7 @@ export default function AcademicPrograms() {
               >
                 <div className={`h-full ${program.bgColor} rounded-2xl p-8 border border-gray-200 transition-all duration-300 hover:shadow-xl hover:scale-105 hover:border-transparent`}>
                   <div className={`w-16 h-16 ${program.iconBg} rounded-xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                    <program.icon className={`w-8 h-8 text-transparent bg-clip-text bg-gradient-to-r ${program.color}`} style={{ WebkitTextFillColor: 'transparent', backgroundClip: 'text' }} />
+                    <img src="/epet7logo.png" alt="EPET N°7" className="w-10 h-10 object-cover rounded" />
                   </div>
                   <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-900 transition-colors">
                     {program.title}

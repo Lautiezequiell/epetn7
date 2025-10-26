@@ -39,18 +39,15 @@ export default function Layout({ children }) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
-            <img className="flex justify-between items-center h-20" src="/epet7logo.png" alt="EPET N°7" className="w-12 h-12 object-cover rounded-lg shadow-lg" />
             <motion.div
               className="flex items-center gap-3"
               whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.2 }}
             >
-              <div className="w-12 h-12 bg-gradient-to-br from-blue-900 to-blue-700 rounded-lg flex items-center justify-center shadow-lg">
-                <span className="text-white font-bold text-xl">E7</span>
-              </div>
+              <img src="/epet7logo.png" alt="EPET N°7" className="w-10 h-10 object-cover rounded-lg shadow-lg" />
               <div className="hidden sm:block">
                 <h1 className="text-lg font-bold text-gray-900">EPET N°7</h1>
-                <p className="text-xs text-gray-600">Educación Técnica</p>
+                <p className="text-xs text-gray-600">Jardín América</p>
               </div>
             </motion.div>
 
@@ -131,9 +128,7 @@ export default function Layout({ children }) {
             {/* Sobre EPET N7 */}
             <div>
               <div className="flex items-center gap-3 mb-6">
-                <div className="w-10 h-10 bg-gradient-to-br from-blue-400 to-blue-600 rounded-lg flex items-center justify-center">
-                  <span className="text-white font-bold">E7</span>
-                </div>
+                <img src="/epet7logo.png" alt="EPET N°7" className="w-10 h-10 object-cover rounded-lg" />
                 <h3 className="text-xl font-bold">EPET N°7</h3>
               </div>
               <p className="text-gray-300 text-sm leading-relaxed">
@@ -196,11 +191,11 @@ export default function Layout({ children }) {
               <ul className="space-y-4">
                 <li className="flex items-start gap-3">
                   <MapPin className="w-5 h-5 text-blue-400 flex-shrink-0 mt-0.5" />
-                  <span className="text-gray-300 text-sm">
-                    Av. Principal 1234<br />
-                    Ciudad, Provincia<br />
-                    Argentina
-                  </span>
+                  <a href="https://maps.app.goo.gl/5vi1tqr2Qmx2A5Xt8" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white text-sm transition-colors">
+                    Perú y Colombia<br />
+                    Jardín América,<br /> 
+                    Misiones, Argentina
+                  </a>
                 </li>
                 <li className="flex items-center gap-3">
                   <Phone className="w-5 h-5 text-blue-400 flex-shrink-0" />
@@ -214,10 +209,10 @@ export default function Layout({ children }) {
                 <li className="flex items-center gap-3">
                   <Mail className="w-5 h-5 text-blue-400 flex-shrink-0" />
                   <a 
-                    href="mailto:info@epetn7.edu.ar"
+                    href="mailto:epetn7@gmail.com"
                     className="text-gray-300 hover:text-white text-sm transition-colors"
                   >
-                    info@epetn7.edu.ar
+                    epetn7@gmail.com
                   </a>
                 </li>
               </ul>

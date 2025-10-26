@@ -35,9 +35,9 @@ export default function Hero() {
               transition={{ delay: 0.3 }}
               className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6"
             >
-              Formando el Futuro
+            Construimos futuro
               <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
-                de la Tecnología
+                con trabajo decente
               </span>
             </motion.h1>
 
@@ -113,7 +113,7 @@ export default function Hero() {
           >
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=800&h=600&fit=crop"
+                src="../public/NuestrosAlumnos.jpeg"
                 alt="Estudiantes de EPET N7"
                 className="w-full h-auto object-cover"
               />

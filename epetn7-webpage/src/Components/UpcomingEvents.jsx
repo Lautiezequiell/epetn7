@@ -66,46 +66,53 @@ export default function UpcomingEvents() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
-              <div className="group bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-transparent">
-                <div className="flex flex-col sm:flex-row">
-                  {/* Date Badge */}
-                  <div className={`flex-shrink-0 w-full sm:w-32 bg-gradient-to-br ${
-                    event.color === 'blue' ? 'from-blue-500 to-blue-600' :
-                    event.color === 'purple' ? 'from-purple-500 to-purple-600' :
-                    'from-orange-500 to-orange-600'
-                  } text-white p-6 flex flex-col items-center justify-center`}>
-                    <div className="text-4xl font-bold">{event.date}</div>
-                    <div className="text-sm font-semibold uppercase tracking-wider">{event.month}</div>
-                  </div>
+              <a
+                href="https://epetn7.netlify.app"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block"
+              >
+                <div className="group bg-white rounded-2xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-transparent">
+                  <div className="flex flex-col sm:flex-row">
+                    {/* Date Badge */}
+                    <div className={`flex-shrink-0 w-full sm:w-32 bg-gradient-to-br ${
+                      event.color === 'blue' ? 'from-blue-500 to-blue-600' :
+                      event.color === 'purple' ? 'from-purple-500 to-purple-600' :
+                      'from-orange-500 to-orange-600'
+                    } text-white p-6 flex flex-col items-center justify-center`}>
+                      <div className="text-4xl font-bold">{event.date}</div>
+                      <div className="text-sm font-semibold uppercase tracking-wider">{event.month}</div>
+                    </div>
 
-                  {/* Content */}
-                  <div className="flex-1 p-6">
-                    <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-900 transition-colors">
-                      {event.title}
-                    </h3>
-                    <p className="text-gray-600 mb-4 leading-relaxed">
-                      {event.description}
-                    </p>
-                    <div className="flex flex-wrap gap-4 text-sm text-gray-500">
-                      <div className="flex items-center gap-2">
-                        <Clock className="w-4 h-4" />
-                        <span>{event.time}</span>
-                      </div>
-                      <div className="flex items-center gap-2">
-                        <MapPin className="w-4 h-4" />
-                        <span>{event.location}</span>
+                    {/* Content */}
+                    <div className="flex-1 p-6">
+                      <h3 className="text-xl font-bold text-gray-900 mb-3 group-hover:text-blue-900 transition-colors">
+                        {event.title}
+                      </h3>
+                      <p className="text-gray-600 mb-4 leading-relaxed">
+                        {event.description}
+                      </p>
+                      <div className="flex flex-wrap gap-4 text-sm text-gray-500">
+                        <div className="flex items-center gap-2">
+                          <Clock className="w-4 h-4" />
+                          <span>{event.time}</span>
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <MapPin className="w-4 h-4" />
+                          <span>{event.location}</span>
+                        </div>
                       </div>
                     </div>
-                  </div>
 
-                  {/* Arrow */}
-                  <div className="flex items-center justify-center p-6 sm:p-0 sm:pr-6">
-                    <div className="w-10 h-10 bg-gray-100 group-hover:bg-blue-100 rounded-full flex items-center justify-center transition-colors">
-                      <ArrowRight className="w-5 h-5 text-gray-400 group-hover:text-blue-600 group-hover:translate-x-1 transition-all" />
+                    {/* Arrow */}
+                    <div className="flex items-center justify-center p-6 sm:p-0 sm:pr-6">
+                      <div className="w-10 h-10 bg-gray-100 group-hover:bg-blue-100 rounded-full flex items-center justify-center transition-colors">
+                        <ArrowRight className="w-5 h-5 text-gray-400 group-hover:text-blue-600 group-hover:translate-x-1 transition-all" />
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              </a>
             </motion.div>
           ))}
         </div>
