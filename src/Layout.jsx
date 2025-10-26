@@ -15,13 +15,54 @@ export default function Layout({ children }) {
   }, []);
 
   const navLinks = [
-    { name: "Inicio", url: "https://epetn7.netlify.app" },
+    { name: "Inicio", url: "#inicio" },
     { name: "Inscripciones", url: "https://epetn7.netlify.app/inscripciones" },
     { name: "Aula Virtual", url: "https://epetn7.netlify.app/aula-virtual" },
     { name: "ExpoEPET", url: "https://epetn7.netlify.app/expoepet" },
     { name: "Propuestas Académicas", url: "https://epetn7.netlify.app/propuestas" },
-    { name: "Contáctanos", url: "https://epetn7.netlify.app/contacto" },
+    { name: "Contáctanos", url: "#footer" },
   ];
+
+  // Intercept clicks on links that point to "#inicio" and scroll smoothly to the top
+  useEffect(() => {
+    const handleAnchorClickInicio = (e) => {
+      const anchor = e.target.closest && e.target.closest("a");
+      if (!anchor) return;
+      const href = anchor.getAttribute("href");
+      if (href === "#inicio") {
+        e.preventDefault();
+        setIsMobileMenuOpen(false);
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+    };
+
+    document.addEventListener("click", handleAnchorClickInicio);
+    return () => document.removeEventListener("click", handleAnchorClickInicio);
+  }, []);
+
+  // Intercept clicks on links that point to "#footer" and scroll smoothly to the footer
+  useEffect(() => {
+    const handleAnchorClick = (e) => {
+      const anchor = e.target.closest && e.target.closest("a");
+      if (!anchor) return;
+      const href = anchor.getAttribute("href");
+      if (href === "#footer") {
+        e.preventDefault();
+        // close mobile menu if open
+        setIsMobileMenuOpen(false);
+        const footerEl = document.querySelector("footer");
+        if (footerEl) {
+          footerEl.scrollIntoView({ behavior: "smooth", block: "start" });
+        } else {
+          // fallback: jump to top if footer not found
+          window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+        }
+      }
+    };
+
+    document.addEventListener("click", handleAnchorClick);
+    return () => document.removeEventListener("click", handleAnchorClick);
+  }, []);
 
   return (
     <div className="min-h-screen bg-white">
@@ -154,13 +195,11 @@ export default function Layout({ children }) {
                   <Instagram className="w-5 h-5" />
                 </a>
                 <a
-                  href="https://x.com/epetn7"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-10 h-10 bg-white/10 hover:bg-blue-400 rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110"
-                  aria-label="Twitter"
+                  href="mailto:epetn7@gmail.com"
+                  className="w-10 h-10 bg-white/10 hover:bg-gray-400 rounded-lg flex items-center justify-center transition-all duration-300 hover:scale-110"
+                  aria-label="Email"
                 >
-                  <Twitter className="w-5 h-5" />
+                  <Mail className="w-5 h-5" />
                 </a>
               </div>
             </div>

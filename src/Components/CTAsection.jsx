@@ -26,7 +26,7 @@ export default function CTASection() {
               </span>
             </h2>
             <p className="text-xl text-blue-100 max-w-2xl mx-auto mb-12 leading-relaxed">
-              Unite a la comunidad de EPET N°7 y formá parte de la próxima generación de profesionales técnicos
+              Unite a la comunidad de la EPET N°7 y formá parte de la próxima generación de técnicos profesionales
             </p>
           </motion.div>
 
