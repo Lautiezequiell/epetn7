@@ -4,8 +4,8 @@ import { BookOpen } from "lucide-react";
 
 const programs = [
   {
-    title: "Electrónica",
-    description: "Formación integral en sistemas electrónicos, microcontroladores y automatización industrial.",
+    title: "Robótica",
+    description: "Diseño, construcción y programación de sistemas robóticos para diversas aplicaciones industriales y tecnológicas.",
     color: "from-blue-500 to-blue-600",
     bgColor: "bg-blue-50",
     iconBg: "bg-blue-100",
@@ -19,14 +19,14 @@ const programs = [
   },
   {
     title: "Electromecánica",
-    description: "Especialización en sistemas eléctricos, mecánicos y control de procesos industriales.",
+    description: "Especialización en sistemas eléctricos, electrónicos y control de procesos industriales.",
     color: "from-orange-500 to-orange-600",
     bgColor: "bg-orange-50",
     iconBg: "bg-orange-100",
   },
   {
-    title: "Mecánica",
-    description: "Diseño, fabricación y mantenimiento de sistemas mecánicos con tecnología de punta.",
+    title: "Automotores",
+    description: "Conocimientos en mecánica, electrónica y gestión de vehículos para la industria automotriz.",
     color: "from-green-500 to-green-600",
     bgColor: "bg-green-50",
     iconBg: "bg-green-100",

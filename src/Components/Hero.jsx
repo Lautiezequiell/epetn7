@@ -47,7 +47,7 @@ export default function Hero() {
               transition={{ delay: 0.4 }}
               className="text-lg text-blue-100 mb-8 leading-relaxed max-w-xl"
             >
-              En EPET N°7 brindamos educación técnica de excelencia, preparando profesionales capacitados para enfrentar los desafíos del mundo laboral con conocimientos sólidos y valores éticos.
+              La E.P.E.T N°7 se fundó el 14 de marzo de 1978, comenzando a funcionar como ENET. Hoy, más de 600 estudiantes forman parte de nuestra comunidad educativa, preparándose para un futuro brillante en el mundo técnico y profesional.
             </motion.p>
 
             <motion.div
@@ -85,19 +85,19 @@ export default function Hero() {
             >
               <div className="text-center lg:text-left">
                 <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
-                  50+
+                  47+
                 </div>
                 <div className="text-sm text-blue-200 mt-1">Años de Historia</div>
               </div>
               <div className="text-center lg:text-left">
                 <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
-                  800+
+                  600+
                 </div>
                 <div className="text-sm text-blue-200 mt-1">Estudiantes</div>
               </div>
               <div className="text-center lg:text-left">
                 <div className="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-400">
-                  95%
+                  90%
                 </div>
                 <div className="text-sm text-blue-200 mt-1">Inserción Laboral</div>
               </div>

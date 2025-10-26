@@ -27,7 +27,7 @@ export default function ExpoSection() {
             </h2>
 
             <p className="text-lg text-gray-600 leading-relaxed mb-8">
-              La muestra anual donde nuestros estudiantes exhiben sus proyectos innovadores, demostraciones técnicas y desarrollos tecnológicos ante la comunidad educativa y empresas del sector.
+              La muestra anual donde nuestros estudiantes exhiben sus proyectos innovadores, demostraciones técnicas y desarrollos tecnológicos ante la comunidad educativa y empresas de la provincia.
             </p>
 
             {/* Features */}
@@ -38,7 +38,7 @@ export default function ExpoSection() {
                 </div>
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-1">Próxima Edición</h4>
-                  <p className="text-gray-600 text-sm">Octubre 2024 - 3 días de innovación</p>
+                  <p className="text-gray-600 text-sm">Octubre 2025 - 1 día de pura innovación</p>
                 </div>
               </div>
 
@@ -86,14 +86,14 @@ export default function ExpoSection() {
               <div className="space-y-4">
                 <div className="relative rounded-2xl overflow-hidden shadow-xl h-48">
                   <img
-                    src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=400&h=300&fit=crop"
+                    src="../../public/Robotic.jpeg"
                     alt="ExpoEPET - Proyectos"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="relative rounded-2xl overflow-hidden shadow-xl h-64">
                   <img
-                    src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=400&h=400&fit=crop"
+                    src="../../public/Policia.jpeg"
                     alt="ExpoEPET - Exhibición"
                     className="w-full h-full object-cover"
                   />
@@ -102,14 +102,14 @@ export default function ExpoSection() {
               <div className="space-y-4 pt-8">
                 <div className="relative rounded-2xl overflow-hidden shadow-xl h-64">
                   <img
-                    src="https://images.unsplash.com/photo-1531482615713-2afd69097998?w=400&h=400&fit=crop"
+                    src="../../public/Egresados.jpeg"
                     alt="ExpoEPET - Estudiantes"
                     className="w-full h-full object-cover"
                   />
                 </div>
                 <div className="relative rounded-2xl overflow-hidden shadow-xl h-48">
                   <img
-                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop"
+                    src="../../public/Robotic.jpeg"
                     alt="ExpoEPET - Innovación"
                     className="w-full h-full object-cover"
                   />

@@ -4,28 +4,28 @@ import { Lightbulb, ArrowRight } from "lucide-react";
 
 const projects = [
   {
-    title: "Robot Autónomo de Competición",
-    description: "Estudiantes de Electrónica desarrollaron un robot capaz de navegar de forma autónoma en competencias nacionales.",
-    image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600&h=400&fit=crop",
-    category: "Electrónica",
-    year: "2024",
-    url: "https://epetn7.netlify.app/proyectos",
-  },
-  {
-    title: "Sistema de Gestión Escolar Web",
-    description: "Plataforma completa desarrollada por alumnos de Informática para administrar inscripciones y calificaciones.",
-    image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=400&fit=crop",
+    title: "EcoDepto",
+    description: "Este proyecto es un sistema de riego inteligente para jardines verticales en terrazas y balcones de edificios utilizando el agua de condensación de los aires acondicionados. Diseñado para entornos dónde el espacio es limitado, para optimizar el uso del agua y promover la jardinería urbana.",
+    image: "../../public/EcoDeptoLogo.jpeg",
     category: "Informática",
-    year: "2024",
-    url: "https://epetn7.netlify.app/proyectos",
+    year: "2025",
+    url: "https://ecodepto3d.netlify.app/",
   },
   {
-    title: "Prototipo de Vehículo Eléctrico",
-    description: "Proyecto interdisciplinario que combina mecánica y electricidad para crear movilidad sustentable.",
-    image: "https://images.unsplash.com/photo-1581092160562-40aa08e78837?w=600&h=400&fit=crop",
+    title: "Sistema Gestor de Biblioteca",
+    description: "Este proyecto es una plataforma web diseñada para gestionar de manera eficiente los recursos y actividades de una biblioteca municipal, facilitando el préstamo y devolución de libros, así como la administración de usuarios y catálogos.",
+    image: "../../public/Biblioteca-1.png",
+    category: "Informática",
+    year: "2025",
+    url: "https://bibliotmunicipaljardin.netlify.app",
+  },
+  {
+    title: "SmartHouse",
+    description: "Proyecto de automatización del hogar que integra dispositivos inteligentes para mejorar la comodidad, seguridad y eficiencia energética en viviendas. Permite controlar y monitorear diversos aspectos del hogar a través de una interfaz centralizada.",
+    image: "../../public/SmartHouse.jpeg",
     category: "Electromecánica",
-    year: "2023",
-    url: "https://epetn7.netlify.app/proyectos",
+    year: "2025",
+    url: "https://vddc34h2-smart-house.vercel.app/",
   },
 ];
 
