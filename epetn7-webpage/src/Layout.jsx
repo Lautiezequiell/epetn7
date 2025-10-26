@@ -39,7 +39,8 @@ export default function Layout({ children }) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-20">
             {/* Logo */}
-            <motion.div 
+            <img className="flex justify-between items-center h-20" src="/epet7logo.png" alt="EPET N°7" className="w-12 h-12 object-cover rounded-lg shadow-lg" />
+            <motion.div
               className="flex items-center gap-3"
               whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.2 }}
