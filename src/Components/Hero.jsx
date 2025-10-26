@@ -113,7 +113,7 @@ export default function Hero() {
           >
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img
-                src="../public/NuestrosAlumnos.jpeg"
+                src="/NuestrosAlumnos.jpeg"
                 alt="Estudiantes de EPET N7"
                 className="w-full h-auto object-cover"
               />
