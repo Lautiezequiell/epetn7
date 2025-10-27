@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Menu, X, Facebook, Instagram, Twitter, Mail, Phone, MapPin } from "lucide-react";
+import { Menu, X, Facebook, Instagram, Mail, Phone, MapPin } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 
 export default function Layout({ children }) {
@@ -23,11 +23,52 @@ export default function Layout({ children }) {
     { name: "Contáctanos", url: "#footer" },
   ];
 
-  // Intercept clicks/taps on any internal hash links and scroll smoothly
+  // Helper to perform smooth scrolling to a given hash
+  const scrollToHash = (href) => {
+    if (!href || !href.startsWith("#")) return;
+    if (href === "#" || href === "#inicio" || href === "#top") {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+      return;
+    }
+    if (href === "#footer") {
+      const footerEl = document.querySelector("footer");
+      if (footerEl) {
+        footerEl.scrollIntoView({ behavior: "smooth", block: "start" });
+      } else {
+        window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
+      }
+      return;
+    }
+    const id = href.slice(1);
+    const target = document.getElementById(id) || document.querySelector(href);
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth", block: "start" });
+    }
+  };
+
+  // Unified activator for navbar internal links (handles mouse/touch and keyboard)
+  const activateNavInternal = (e, href, isMobile = false) => {
+    if (!href || !href.startsWith('#')) return;
+    e.preventDefault();
+    e.stopPropagation();
+    if (isMobile) {
+      const targetHref = href;
+      setIsMobileMenuOpen(false);
+      setTimeout(() => {
+        scrollToHash(targetHref);
+      }, 350);
+    } else {
+      scrollToHash(href);
+    }
+  };
+
+  // Intercept clicks on any internal hash links and scroll smoothly
   useEffect(() => {
     const handleAnchorHash = (e) => {
       const anchor = e.target.closest && e.target.closest("a");
       if (!anchor) return;
+      // Ignore navbar links; they have their own onClick logic for single-tap behavior
+      if (anchor.closest('nav')) return;
       const href = anchor.getAttribute("href");
       if (!href || !href.startsWith("#")) return;
 
@@ -58,12 +99,9 @@ export default function Layout({ children }) {
       }
     };
 
-    const opts = { passive: false };
     document.addEventListener("click", handleAnchorHash);
-    document.addEventListener("touchend", handleAnchorHash, opts);
     return () => {
       document.removeEventListener("click", handleAnchorHash);
-      document.removeEventListener("touchend", handleAnchorHash, opts);
     };
   }, []);
 
@@ -106,6 +144,13 @@ export default function Layout({ children }) {
                   initial={{ opacity: 0, y: -20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.1 }}
+                  onClick={(e) => activateNavInternal(e, link.url, false)}
+                  onKeyDown={(e) => {
+                    if (!link.url.startsWith('#')) return;
+                    if (e.key === 'Enter' || e.key === ' ') {
+                      activateNavInternal(e, link.url, false);
+                    }
+                  }}
                   className="px-4 py-2 text-sm font-medium text-gray-700 hover:text-blue-900 hover:bg-blue-50 rounded-lg transition-all duration-200"
                 >
                   {link.name}
@@ -148,7 +193,16 @@ export default function Layout({ children }) {
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: index * 0.05 }}
-                    onClick={() => setIsMobileMenuOpen(false)}
+                    onClick={(e) => activateNavInternal(e, link.url, true)}
+                    onKeyDown={(e) => {
+                      if (!link.url.startsWith('#')) {
+                        if (e.key === 'Enter' || e.key === ' ') setIsMobileMenuOpen(false);
+                        return;
+                      }
+                      if (e.key === 'Enter' || e.key === ' ') {
+                        activateNavInternal(e, link.url, true);
+                      }
+                    }}
                     className="block px-4 py-3 text-base font-medium text-gray-700 hover:text-blue-900 hover:bg-blue-50 rounded-lg transition-all"
                   >
                     {link.name}
