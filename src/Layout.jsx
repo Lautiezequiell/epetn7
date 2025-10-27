@@ -23,45 +23,48 @@ export default function Layout({ children }) {
     { name: "Contáctanos", url: "#footer" },
   ];
 
-  // Intercept clicks on links that point to "#inicio" and scroll smoothly to the top
+  // Intercept clicks/taps on any internal hash links and scroll smoothly
   useEffect(() => {
-    const handleAnchorClickInicio = (e) => {
+    const handleAnchorHash = (e) => {
       const anchor = e.target.closest && e.target.closest("a");
       if (!anchor) return;
       const href = anchor.getAttribute("href");
-      if (href === "#inicio") {
-        e.preventDefault();
-        setIsMobileMenuOpen(false);
+      if (!href || !href.startsWith("#")) return;
+
+      // This is an internal hash link; perform smooth scroll
+      e.preventDefault();
+      setIsMobileMenuOpen(false);
+
+      if (href === "#" || href === "#inicio" || href === "#top") {
         window.scrollTo({ top: 0, behavior: "smooth" });
+        return;
       }
-    };
 
-    document.addEventListener("click", handleAnchorClickInicio);
-    return () => document.removeEventListener("click", handleAnchorClickInicio);
-  }, []);
-
-  // Intercept clicks on links that point to "#footer" and scroll smoothly to the footer
-  useEffect(() => {
-    const handleAnchorClick = (e) => {
-      const anchor = e.target.closest && e.target.closest("a");
-      if (!anchor) return;
-      const href = anchor.getAttribute("href");
       if (href === "#footer") {
-        e.preventDefault();
-        // close mobile menu if open
-        setIsMobileMenuOpen(false);
         const footerEl = document.querySelector("footer");
         if (footerEl) {
           footerEl.scrollIntoView({ behavior: "smooth", block: "start" });
         } else {
-          // fallback: jump to top if footer not found
           window.scrollTo({ top: document.body.scrollHeight, behavior: "smooth" });
         }
+        return;
+      }
+
+      // Generic target by id
+      const id = href.slice(1);
+      const target = document.getElementById(id) || document.querySelector(href);
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth", block: "start" });
       }
     };
 
-    document.addEventListener("click", handleAnchorClick);
-    return () => document.removeEventListener("click", handleAnchorClick);
+    const opts = { passive: false };
+    document.addEventListener("click", handleAnchorHash);
+    document.addEventListener("touchend", handleAnchorHash, opts);
+    return () => {
+      document.removeEventListener("click", handleAnchorHash);
+      document.removeEventListener("touchend", handleAnchorHash, opts);
+    };
   }, []);
 
   return (
@@ -98,8 +101,8 @@ export default function Layout({ children }) {
                 <motion.a
                   key={link.name}
                   href={link.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                  target={link.url.startsWith("http") ? "_blank" : undefined}
+                  rel={link.url.startsWith("http") ? "noopener noreferrer" : undefined}
                   initial={{ opacity: 0, y: -20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.1 }}
@@ -140,8 +143,8 @@ export default function Layout({ children }) {
                   <motion.a
                     key={link.name}
                     href={link.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    target={link.url.startsWith("http") ? "_blank" : undefined}
+                    rel={link.url.startsWith("http") ? "noopener noreferrer" : undefined}
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ delay: index * 0.05 }}
@@ -212,8 +215,8 @@ export default function Layout({ children }) {
                   <li key={link.name}>
                     <a
                       href={link.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                      target={link.url.startsWith("http") ? "_blank" : undefined}
+                      rel={link.url.startsWith("http") ? "noopener noreferrer" : undefined}
                       className="text-gray-300 hover:text-white text-sm transition-colors inline-flex items-center gap-2 group"
                     >
                       <span className="w-1 h-1 bg-blue-400 rounded-full group-hover:w-2 transition-all"></span>
