@@ -16,10 +16,10 @@ export default function Layout({ children }) {
 
   const navLinks = [
     { name: "Inicio", url: "#inicio" },
-    { name: "Inscripciones", url: "https://epetn7.netlify.app/inscripciones" },
+    { name: "Inscripciones", url: "https://epetn7.com.ar/inscripciones" },
     { name: "Aula Virtual", url: "https://moodle.com/es/" },
-    { name: "ExpoEPET", url: "https://epetn7.netlify.app/expoepet" },
-    { name: "Propuestas Académicas", url: "https://epetn7.netlify.app/propuestas" },
+    { name: "ExpoEPET", url: "https://epetn7.com.ar/proyectos" },
+    { name: "Propuestas Académicas", url: "https://epetn7.com.ar/propuestas" },
     { name: "Contáctanos", url: "#footer" },
   ];
 

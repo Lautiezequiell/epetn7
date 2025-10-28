@@ -68,7 +68,7 @@ export default function AcademicPrograms() {
               transition={{ duration: 0.6, delay: index * 0.1 }}
             >
               <a
-                href="https://epetn7.netlify.app/propuestas"
+                href="https://epetn7.com.ar/propuestas"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group block h-full"
@@ -108,12 +108,12 @@ export default function AcademicPrograms() {
           className="text-center mt-12"
         >
           <a
-            href="https://epetn7.netlify.app/propuestas"
+            href="https://epetn7.com.ar/propuestas"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-blue-900 to-blue-800 hover:from-blue-800 hover:to-blue-700 text-white font-semibold rounded-xl shadow-lg transition-all duration-300 hover:scale-105"
           >
-            Ver Todas las Carreras
+            Ver Orientaciones Disponibles
             <BookOpen className="w-5 h-5" />
           </a>
         </motion.div>

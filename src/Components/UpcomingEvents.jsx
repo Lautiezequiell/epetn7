@@ -67,7 +67,7 @@ export default function UpcomingEvents() {
               transition={{ duration: 0.5, delay: index * 0.1 }}
             >
               <a
-                href="https://epetn7.netlify.app"
+                href="https://epetn7.com.ar/calendario"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block"
@@ -126,7 +126,7 @@ export default function UpcomingEvents() {
           className="text-center mt-12"
         >
           <a
-            href="https://epetn7.netlify.app"
+            href="https://epetn7.com.ar/calendario"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 px-8 py-4 bg-white hover:bg-gray-50 text-gray-900 font-semibold rounded-xl shadow-md hover:shadow-lg transition-all duration-300 border border-gray-200"

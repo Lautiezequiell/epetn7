@@ -64,7 +64,7 @@ export default function ExpoSection() {
             </div>
 
             <a
-              href="https://epetn7.netlify.app/expoepet"
+              href="https://epetn7.com.ar/proyectos"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 px-8 py-4 bg-gradient-to-r from-orange-600 to-orange-700 hover:from-orange-700 hover:to-orange-800 text-white font-semibold rounded-xl shadow-lg shadow-orange-500/30 transition-all duration-300 hover:scale-105"

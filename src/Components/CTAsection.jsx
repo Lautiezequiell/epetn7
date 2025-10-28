@@ -38,7 +38,7 @@ export default function CTASection() {
             className="flex flex-col sm:flex-row gap-6 justify-center items-center"
           >
             <a
-              href="https://epetn7.netlify.app/inscripciones"
+              href="https://epetn7.com.ar/inscripciones"
               target="_blank"
               rel="noopener noreferrer"
               className="group inline-flex items-center gap-3 px-8 py-5 bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-semibold rounded-xl shadow-2xl shadow-orange-500/30 transition-all duration-300 hover:scale-105"
@@ -49,7 +49,7 @@ export default function CTASection() {
             </a>
 
             <a
-              href="https://epetn7.netlify.app/contacto"
+              href="mailto:epetn7@gmail.com"
               target="_blank"
               rel="noopener noreferrer"
               className="group inline-flex items-center gap-3 px-8 py-5 bg-white/10 hover:bg-white/20 backdrop-blur-sm text-white font-semibold rounded-xl border border-white/20 transition-all duration-300 hover:scale-105"
