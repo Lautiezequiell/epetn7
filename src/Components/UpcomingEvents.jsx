@@ -4,7 +4,7 @@ import { Calendar, Clock, MapPin, ArrowRight } from "lucide-react";
 
 const events = [
   {
-    date: "14",
+    date: "12",
     month: "NOV",
     title: "Fiesta de Educación Física",
     time: "19:00 - 21:00 hs",
@@ -15,17 +15,17 @@ const events = [
   {
     date: "5",
     month: "NOV",
-    title: "Charla Técnica: IA y Programación",
+    title: "Charla Técnica: Programación Web y Móvil",
     time: "13:30 hs",
     location: "Laboratorio Informático EPET N7",
     description: "Conferencia con profesionales del sector tecnológico sobre tendencias actuales.",
     color: "purple",
   },
   {
-    date: "10",
-    month: "MAR",
+    date: "3",
+    month: "NOV",
     title: "Inicio Inscripciones 2026",
-    time: "7:00 - 11:00 hs",
+    time: "7:00 - 11:00 hs y 14:00 - 17:00 hs",
     location: "Secretaría",
     description: "Apertura del período de inscripción para el ciclo lectivo 2026.",
     color: "orange",

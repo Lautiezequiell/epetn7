@@ -9,7 +9,7 @@ const projects = [
     image: "/EcoDeptoLogo.jpeg",
     category: "Informática 6°B",
     year: "2025",
-    url: "https://epetn7.com.ar/proyectos/p1",
+    url: "https://epetn7.com.ar/proyectos/p2/",
   },
   {
     title: "Sistema Gestor de Biblioteca",
@@ -17,7 +17,7 @@ const projects = [
     image: "/Biblioteca-1.png",
     category: "Informática 6°B",
     year: "2025",
-    url: "https://epetn7.com.ar/proyectos/p2",
+    url: "https://epetn7.com.ar/proyectos/p1",
   },
   {
     title: "SmartHouse",
@@ -25,7 +25,7 @@ const projects = [
     image: "/SmartHouse.jpeg",
     category: "Informática 5°B",
     year: "2025",
-    url: "https://epetn7.com.ar/proyectos/p3",
+    url: "https://epetn7.com.ar/proyectos/P9",
   },
 ];
 

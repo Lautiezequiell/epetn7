@@ -299,7 +299,7 @@ export default function Layout({ children }) {
                     href="tel:+54123456789"
                     className="text-gray-300 hover:text-white text-sm transition-colors"
                   >
-                    +54 123 456 789
+                    +54 3743 461692
                   </a>
                 </li>
                 <li className="flex items-center gap-3">
